@@ -1,0 +1,258 @@
+.resume {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 36px;
+  color: #333333;
+  background: #f8fbff;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.7;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.intro {
+  text-align: center;
+  padding: 32px 24px;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #245b91, #4a86c0);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(36, 91, 145, 0.25);
+}
+
+.intro h1 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 2.3rem;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.intro h1:hover {
+  color: #e8f1fa;
+}
+
+.intro p {
+  margin: 0;
+  color: #dbe9f6;
+  overflow-wrap: anywhere;
+}
+
+.intro a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+section {
+  margin: 28px 0;
+  padding: 20px 22px;
+  background: #ffffff;
+  border: 1px solid #d6e4f0;
+  border-left: 4px solid #6b9dcc;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(36, 91, 145, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 16px rgba(36, 91, 145, 0.10);
+}
+
+section h2 {
+  margin-top: 0;
+  padding-bottom: 8px;
+  color: #245b91;
+  border-bottom: 1px solid #d6e4f0;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.edu-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px 16px;
+  margin-top: 14px;
+}
+
+.edu-header h3 {
+  margin: 0;
+  color: #1f2d3d;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.15rem;
+  font-weight: normal;
+}
+
+.edu-date {
+  padding: 3px 12px;
+  border-radius: 20px;
+  background: #e8f1fa;
+  color: #245b91;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.edu-school {
+  margin: 6px 0 0;
+  color: #245b91;
+  font-weight: 500;
+}
+
+.edu-location {
+  color: #64748b;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+ul.skills li {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #e8f1fa;
+  color: #245b91;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+ul.skills li:hover {
+  background: #d6e8f8;
+  transform: translateY(-2px);
+}
+
+ul.projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 24px;
+}
+
+ul.projects li {
+  position: relative;
+  padding: 3px 0 3px 22px;
+  transition: color 0.2s ease;
+}
+
+ul.projects li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #6b9dcc;
+  font-weight: bold;
+}
+
+ul.projects li:hover {
+  color: #245b91;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 20px;
+  background: #245b91;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  background: #17436e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(36, 91, 145, 0.2);
+}
+
+button:focus-visible {
+  outline: 3px solid #8bbce8;
+  outline-offset: 3px;
+}
+
+.summary {
+  padding: 4px 12px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  text-align: center;
+}
+
+.summary:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.summary h2 {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.summary h2::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin: 10px auto 0;
+  border-radius: 2px;
+  background: #6b9dcc;
+}
+
+.summary p {
+  max-width: 700px;
+  margin: 14px auto 0;
+  color: #475569;
+  font-size: 1.05rem;
+}
+
+.interaction {
+  padding: 22px;
+  border: 1px solid #cfe0f1;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #eaf3fb, #ffffff);
+  box-shadow: 0 3px 10px rgba(36, 91, 145, 0.06);
+}
+
+.interaction:hover {
+  box-shadow: 0 7px 16px rgba(36, 91, 145, 0.12);
+}
+
+.interaction h2 {
+  padding-bottom: 0;
+  border-bottom: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+  text-transform: none;
+}
+
+@media (max-width: 600px) {
+  .resume {
+    margin: 12px;
+    padding: 20px;
+  }
+
+  section {
+    padding: 16px;
+  }
+
+  ul.projects {
+    grid-template-columns: 1fr;
+  }
+
+  .intro h1 {
+    font-size: 1.7rem;
+  }
+}
